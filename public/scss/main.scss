@@ -5,24 +5,77 @@ $background-grey: #f4f4f4;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Indie Flower", serif;
+    font-family: "Comfortaa", serif;
     text-align: center;
 }
 
 h1 {
-    font-size: 5em;
-    margin: 0px;
+    font-family: "Bangers", serif;
+    font-size: 7em;
+    color:darkred;
+    display:inline;
+    margin: 0px 45%;
+    background: white;
+    padding: 2px 17px 2px 8px;
+    border-radius: 15px;
 }
 
+
+
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Comfortaa", sans-serif;
     margin: 0px;
     background-color: $background-grey;
 }
 
+.rules-body {
+    background-image: url(../../src/Go/views/grid.jpg);
+}
+
+.rules-title {
+     font-family: "Bangers", serif;
+     font-size: 66px;
+     color: darkred;
+     display: inline;
+     border-radius: 20px;
+     line-height: 115px;
+     padding: 10px;
+     background-color: white;
+     margin-left: 35%;
+ }
+
 .content-wrapper {
     max-width: 750px;
     margin: auto;
+}
+
+ul.rules-list {
+     background-color: $background-grey;
+     padding: 26px;
+     border-radius: 15px;
+     margin: 0px 25px;
+ }
+
+li.rule {
+     padding: 3px;
+     font-size: 18px;
+}
+
+ul.game-instructions {
+    display: flex;
+}
+
+
+li#welcome {
+	padding: 0px 10px 0px 5px;
+	border-left: solid tomato;
+	text-align: center;
+	list-style: none;
+}
+
+div.top-bar {
+    background-image: url(../../src/Go/views/grid.jpg);
+    line-height: 135px;
 }
 
 .board {
@@ -97,6 +150,10 @@ body {
 .split-item {
     flex-grow: 1;
     box-sizing: border-box;
+    border: solid tomato 1px;
+    border-radius: 22px;
+    background-color: white;
+    margin: 0px 10px;
 }
 
 .split-wrapper form {

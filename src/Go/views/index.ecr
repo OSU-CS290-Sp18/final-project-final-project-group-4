@@ -1,29 +1,37 @@
+<ul class="game-instructions">
+	<li id="welcome">Welcome to our simulation of Go!</li>
+	<li id="welcome">Defeat your opponent by earning more territory.</li>
+	<li id="welcome">"Capture" dots of the opposite color by surrounding them.</li>
+	<li id="welcome">Create a game by filling out the fields below, giving the next player a password in "Their password."</li>
+	<li id="welcome">Join a game by entering the corresponding session name and password.</li>
+	<li id="welcome">Additional rules are found <a href="rules.html">here.</a></li>
+</ul>
 <div class="split-wrapper">
-    <div class="split-item">
-        <h2>Create Game</h2>
-        <form autocomplete="off" id="create-form" action="/create" method="post">
-            <input required placeholder="Session Name" type="text" name="id"></input>
-            <input required placeholder="Your Password" type="text" name="your-password"></input>
-            <input required placeholder="Their Password" type="text" name="their-password"></input>
-            <div class="radio-parent">
-                <div class="radio-wrapper">
-                    <input type="radio" name="color" id="radio-black" value="black" checked></input>
-                    <label for="radio-black">Black</label>
-                </div>
-                <div class="radio-wrapper">
-                    <input type="radio" name="color" id="radio-white" value="white"></input>
-                    <label for="radio-white">White</label>
-                </div>
-            </div>
-            <input type="submit" value="Create Game"></input>
-        </form>
-    </div>
-    <div class="split-item">
-        <h2>Join Game</h2>
-        <form autocomplete="off" id="join-form" action="/game" method="post">
-            <input required placeholder="Session Name" type="text" name="id"></input>
-            <input required placeholder="Your Password" type="text" name="password"></input>
-            <input type="submit" value="Join Game"></input>
-        </form>
-    </div>
+	<div class="split-item">
+		<h2>Create Game</h2>
+		<form autocomplete="off" id="create-form" action="/create" method="post">
+			<input required placeholder="Session Name" type="text" name="id"></input>
+			<input required placeholder="Your Password" type="text" name="your-password"></input>
+			<input required placeholder="Their Password" type="text" name="their-password"></input>
+			<div class="radio-parent">
+				<div class="radio-wrapper">
+					<input type="radio" name="color" id="radio-black" value="black" checked></input>
+					<label for="radio-black">Black</label>
+				</div>
+				<div class="radio-wrapper">
+					<input type="radio" name="color" id="radio-white" value="white"></input>
+					<label for="radio-white">White</label>
+				</div>
+			</div>
+			<input type="submit" value="Create Game"></input>
+		</form>
+	</div>
+	<div class="split-item">
+		<h2>Join Game</h2>
+		<form autocomplete="off" id="join-form" action="/game" method="post">
+			<input required placeholder="Session Name" type="text" name="id"></input>
+			<input required placeholder="Your Password" type="text" name="password"></input>
+			<input type="submit" value="Join Game"></input>
+		</form>
+	</div>
 </div>
