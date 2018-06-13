@@ -14,13 +14,13 @@ h1 {
     font-size: 7em;
     color:darkred;
     display:inline;
-    margin: 0px 45%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background: white;
     padding: 2px 17px 2px 8px;
     border-radius: 15px;
 }
-
-
 
 body {
     font-family: "Comfortaa", sans-serif;
@@ -29,7 +29,7 @@ body {
 }
 
 .rules-body {
-    background-image: url(../../src/Go/views/grid.jpg);
+    background-image: url(/images/grid.jpg);
 }
 
 .rules-title {
@@ -63,6 +63,7 @@ li.rule {
 
 ul.game-instructions {
     display: flex;
+    padding: 0px;
 }
 
 
@@ -71,11 +72,17 @@ li#welcome {
 	border-left: solid tomato;
 	text-align: center;
 	list-style: none;
+
+        &:last-child {
+            border-right: solid tomato;
+        }
 }
 
 div.top-bar {
-    background-image: url(../../src/Go/views/grid.jpg);
+    background-image: url(/images/grid.jpg);
     line-height: 135px;
+    display: flex;
+    justify-content: center;
 }
 
 .board {
