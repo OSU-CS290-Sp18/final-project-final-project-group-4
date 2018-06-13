@@ -63,14 +63,14 @@ div.top-bar {
   background-image: url(/images/grid.jpg);
   line-height: 135px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 40px; }
 
 .board {
   background-color: tomato;
   padding: 20px;
   max-width: 500px;
   margin: auto;
-  margin-top: 20px;
   border-radius: 10px; }
 
 .black-player .board-cell:hover .overlay {
