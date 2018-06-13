@@ -20,6 +20,14 @@ module Go
         property turn : Color
         property sockets : Array(HTTP::WebSocket)
 
+        def initialize()
+            @size = Size::Small
+            @white_pass = ""
+            @black_pass = ""
+            @board = Board.new
+            @turn = Color::Black
+            @sockets = [] of HTTP::WebSocket
+        end
         def initialize(size : Size, @black_pass, @white_pass)
             @size = size
             @board = Board.new
@@ -133,7 +141,7 @@ module Go
         end
 
         def encode
-            { @turn.to_s, @size.value, board_string(@board) }
+            { @turn, @size.value, @white_pass.to_s, @black_pass.to_s, board_string(@board) }
         end
     end
 end
