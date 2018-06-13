@@ -166,6 +166,10 @@ get "/about" do |env|
     render "src/Go/views/about.ecr"
 end
 
+get "/rules" do |env|
+    render "src/Go/views/rules.ecr"
+end
+
 get "/" do |env|
     render "src/Go/views/index.ecr", "src/Go/views/base.ecr"
 end

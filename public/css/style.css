@@ -2,6 +2,7 @@ body {
     font-family: Roboto;
     background-image: url(/images/clouds.jpg);
     background-color: #F5F7FA;
+    background-size: cover;
     color: #2d2d2d;
 }
 
